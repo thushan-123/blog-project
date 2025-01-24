@@ -15,10 +15,10 @@
         <h1>Computer Networking</h1>
     </header>
 
-    <nav class="navbar navbar-expand-sm bg-light">
+      <nav class="navbar navbar-expand-sm bg-light">
         <div class="container-fluid">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="index.html" class="nav-link text-primary">Home</a></li>
+                <li class="nav-item"><a onclick="navClick(1)" href="#" class="nav-link text-primary">Home</a></li>
                 <li class="nav-item"><a href="networking.html" class="nav-link">Networking</a></li>
                 <li class="nav-item"><a href="hardware.html" class="nav-link">Hardware</a></li>
                 <li class="nav-item"><a href="software.html" class="nav-link">Software</a></li>
@@ -28,13 +28,64 @@
     </nav>
 
     <main>
-        <h2>Home</h2>
-        <p>Welcome to the Computer Networking website. This website is designed to provide information about computer networking, hardware, and software. Please use the navigation menu to browse the site.</p>
+
+        <div class="card ">
+            <h2>Computer Network</h2>
+            <p>
+                <b>
+                    A computer network is a group of computers that use a set of common communication protocols
+                    over digital interconnections for the purpose of sharing resources located on or provided by the network nodes.
+                </b>
+
+                The interconnections between nodes are formed from a broad spectrum of 
+                telecommunication network technologies, based on physically wired, optical, 
+                and wireless radio-frequency methods that may be arranged in a variety of network topologies.
+
+                <br>
+                <br>
+                Computer networks are an essential part of our daily lives. They allow devices like computers,
+                smartphones, and tablets to connect and communicate with each other. Whether you’re browsing
+                the internet, sending an email, or streaming a video, it all happens because of computer networks.
+            </p>
+        </div>
+
+        <div style="text-align: center;">
+            <img src="images/network_IMG001.jpg" style="width: 300px; height: 300px;" alt="network" class="img-fluid">
+        </div>
+
+        <div class="card">
+            <h2>Types of Computer Networks</h2>
+            <p>
+                <b>
+                    There are many different types of computer networks, each with unique characteristics and uses.
+                    Some of the most common types of computer networks include:
+                </b>
+            </p>
+
+            <ul>
+                <li>Local Area Network (LAN)</li>
+                <li>Wide Area Network (WAN)</li>
+                <li>Metropolitan Area Network (MAN)</li>
+                <li>Personal Area Network (PAN)</li>
+                <li>Home Area Network (HAN)</li>
+                <li>Wireless Local Area Network (WLAN)</li>
+                <li>Virtual Private Network (VPN)</li>
+                <li>Client-Server Network</li>
+                <li>Peer-to-Peer Network</li>   
+            </ul>
+        </div>
+        
     </main>
 
     <footer>
         <p>&copy; 2020 Computer Networking</p>
     </footer>
-    
+
+
+    <script>
+        const navClick = (value) => {
+            console.log(value);
+        }
+    </script>
 </body>
 </html>
